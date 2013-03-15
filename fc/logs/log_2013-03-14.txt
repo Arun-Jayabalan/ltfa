@@ -1,0 +1,52 @@
+2013-03-14 2:31:21 - ERROR --> Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 3
+)
+
+  FILE  - /home/content/49/10678349/html/fc/inc/Database.php [403]
+  PHP   - 5.3.21 (Linux)
+  SQL   - UPDATE `fcms_users`
+                SET `activity` = NOW()
+                WHERE `id` = ?
+  STACK
+    #0 __construct called at [/home/content/49/10678349/html/fc/home.php:38]
+    #1 control called at [/home/content/49/10678349/html/fc/home.php:77]
+    #2 update called at [/home/content/49/10678349/html/fc/home.php:94]
+    #3 add called at [/home/content/49/10678349/html/fc/inc/Database.php:406]
+
+ 
+2013-03-14 2:31:22 - ERROR --> Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 3
+)
+
+  FILE  - /home/content/49/10678349/html/fc/inc/Database.php [191]
+  PHP   - 5.3.21 (Linux)
+  SQL   - SELECT `frontpage` 
+                FROM `fcms_user_settings` 
+                WHERE `user` = ?
+  STACK
+    #0 __construct called at [/home/content/49/10678349/html/fc/home.php:38]
+    #1 control called at [/home/content/49/10678349/html/fc/home.php:77]
+    #2 displayWhatsNew called at [/home/content/49/10678349/html/fc/home.php:102]
+    #3 getRow called at [/home/content/49/10678349/html/fc/home.php:257]
+    #4 getRowQuery called at [/home/content/49/10678349/html/fc/inc/Database.php:167]
+    #5 add called at [/home/content/49/10678349/html/fc/inc/Database.php:193]
+
+ 
+2013-03-14 15:28:18 - ERROR --> Use of undefined constant php - assumed 'php'
+  FILE  - /home/content/49/10678349/html/fc/ui/themes/default/footer.php [8]
+  PHP   - 5.3.21 (Linux)
+  STACK
+    #0 __construct called at [/home/content/49/10678349/html/fc/contact.php:23]
+    #1 control called at [/home/content/49/10678349/html/fc/contact.php:56]
+    #2 displayContactForm called at [/home/content/49/10678349/html/fc/contact.php:74]
+    #3 displayFooter called at [/home/content/49/10678349/html/fc/contact.php:177]
+    #4 include_once called at [/home/content/49/10678349/html/fc/contact.php:113]
+    #5 fcmsErrorHandler called at [/home/content/49/10678349/html/fc/ui/themes/default/footer.php:8]
+
+ 
